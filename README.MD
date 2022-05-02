@@ -4,6 +4,11 @@
 
 默认打开assert, 可从CMake中去掉宏定义以关闭
 
+调试使用VSCode插件Cortex-Debug
+根据需要可自行编写task进行烧写
+
+若芯片id对不上可查找openocd配置文件更改id
+
 ## 开发环境:
 
     * Arch Linux x86_64
