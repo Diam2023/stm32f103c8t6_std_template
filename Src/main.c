@@ -1,4 +1,5 @@
 /**
+ *
  * @file main.c
  *
  * @brief
@@ -53,7 +54,6 @@ int main(void)
 
     GPIO_InitTypeDef gpio;
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
-    // RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOD, ENABLE);
     gpio.GPIO_Mode = GPIO_Mode_Out_PP;
     gpio.GPIO_Pin = GPIO_Pin_13;
     gpio.GPIO_Speed = GPIO_Speed_2MHz;

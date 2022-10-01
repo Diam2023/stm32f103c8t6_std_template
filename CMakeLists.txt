@@ -13,7 +13,7 @@ file(GLOB_RECURSE C_SOURCES CONFIGURE_DEPENDS
   CMSIS/*.c
   STM32F10x_StdPeriph_Driver/*.c)
 
-add_executable(${CMAKE_PROJECT_NAME}.elf ${C_SOURCES} startup_stm32f10x_ld.s)
+add_executable(${CMAKE_PROJECT_NAME}.elf ${C_SOURCES} startup_stm32f10x_md.s)
 
 target_include_directories(${CMAKE_PROJECT_NAME}.elf PRIVATE
   Inc
@@ -21,9 +21,9 @@ target_include_directories(${CMAKE_PROJECT_NAME}.elf PRIVATE
   STM32F10x_StdPeriph_Driver/inc)
 
 target_compile_definitions(${CMAKE_PROJECT_NAME}.elf PRIVATE
-  USE_FULL_ASSERT
+  # USE_FULL_ASSERT
   USE_STDPERIPH_DRIVER
-  STM32F10X_LD)
+  STM32F10X_MD)
 
 set(MCU_FLAGS -mcpu=cortex-m0 -mthumb)
 

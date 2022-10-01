@@ -9,6 +9,8 @@
 
 若芯片id对不上可查找openocd配置文件更改id
 
+启动文件使用TrueSTUDIO的
+
 ## 开发环境:
 
     * Arch Linux x86_64

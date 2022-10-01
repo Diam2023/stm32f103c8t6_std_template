@@ -2,3 +2,6 @@
 .vscode/settings.json
 
 build
+.vscode
+cmake-build*
+.cache
